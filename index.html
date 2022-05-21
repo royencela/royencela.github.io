@@ -27,9 +27,11 @@
         crossorigin="anonymous"></script>
     <script src="/js/main.js"> </script>
     <script type="text/javascript">
-        $("aboutLink").click(function () {
-            $("mainArticleSection").load("/subpages/about.html");
-        })
+        $(document).ready(function () {
+            $("aboutLink").click(function () {
+                $("mainArticleSection").load("/subpages/about.html");
+            })
+        });
     </script>
     <main>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
